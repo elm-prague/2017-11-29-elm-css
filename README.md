@@ -1,3 +1,39 @@
+# ElmPrague HackNight 2017-11-29 Demo
+
+## Requirements
+
+* [`nvm`](https://github.com/creationix/nvm) with Node.js version installed
+  based on `./.nvmrc`
+* `yarn`
+
+```sh
+nvm use
+npm install --global yarn
+```
+
+## Install
+
+```sh
+yarn install
+yarn elm:install
+```
+
+## Run
+
+**Run Elm dev server:**
+
+```sh
+yarn dev
+```
+
+**Run elm-css watch mode:**
+
+```sh
+yarn elm-css:watch
+```
+
+---
+
 This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).
 
 Below you will find some information on how to perform basic tasks.  
