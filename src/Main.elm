@@ -1,6 +1,8 @@
 module Main exposing (..)
 
+import BaseStyles
 import Html exposing (Html)
+import Html.Styled exposing (div, toUnstyled)
 import Page.Home.View as Home
 
 
@@ -33,9 +35,12 @@ update msg model =
 ---- VIEW ----
 
 
-view : Model -> Html Msg
+view : Model -> Html.Styled.Html Msg
 view model =
-    Home.view
+    div []
+        [ BaseStyles.baseStyles
+        , Home.view
+        ]
 
 
 
@@ -45,7 +50,7 @@ view model =
 main : Program Never Model Msg
 main =
     Html.program
-        { view = view
+        { view = view >> toUnstyled
         , init = init
         , update = update
         , subscriptions = always Sub.none

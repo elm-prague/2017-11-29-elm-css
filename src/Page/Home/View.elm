@@ -1,6 +1,6 @@
 module Page.Home.View exposing (view)
 
-import Html exposing (Html)
+import Html.Styled as Html exposing (Html)
 import Molecule.InputWithLabel.View as InputWithLabel
 
 
