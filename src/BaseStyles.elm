@@ -2,13 +2,12 @@ module BaseStyles exposing (..)
 
 import Css exposing (..)
 import Css.Foreign exposing (..)
-import DEPRECATED.Css.File exposing (Stylesheet, stylesheet)
-import DEPRECATED.Css.Namespace exposing (namespace)
+import Html.Styled exposing (Html)
 
 
-css : Stylesheet
-css =
-    (stylesheet << namespace "base")
+baseStyles : Html msg
+baseStyles =
+    global
         [ html
             [ height (pct 100)
             ]
